@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let sum = 0;
+
+        let economy = parseInt(prompt("Enter Your Economy Marks"))
+        let science = parseInt(prompt("Enter Your Science marks"))
+        let english = parseInt(prompt("Enter Your English Marks"))
+        let gujarati = parseInt(prompt("Enter Your Gujarati Marks"))
+        let hindi = parseInt(prompt("Enter Your Hindi Marks"))
+
+        let avg = (economy + Geography + english + gujarati + hindi) / 5;
+        console.log(avg);
+
+        if (avg > 90) {
+            document.getElementById("grade").innerHTML = "grade A";
+            document.getElementById("avg").innerHTML = avg
+        } else if (avg > 60 && avg <= 80) {
+            document.getElementById("grade").innerHTML = "grade B";
+            document.getElementById("avg").innerHTML = avg
+        } else if (avg > 40 && avg <= 50) {
+            document.getElementById("grade").innerHTML = "grade c";
+            document.getElementById("avg").innerHTML = avg
+        } else {
+            document.getElementById("avg").innerHTML = "fail"
+        }
+
+    </script>
+</body>
+</html>
